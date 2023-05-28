@@ -1,0 +1,169 @@
+{
+    "Definiciones generales":[
+        {
+            "etiqueta": "Etiquetas",
+            "codigo": "Etiqueta con cierre:<br>&nbsp;&nbsp;&nbsp;<span class='keyword'>&lt;p&gt;&lt;/p&gt;</span><br>Etiqueta sin cierre:<br>   <span class='keyword'>&lt;br&gt;</span>",
+            "informacion": "<ul><li>Son la estructura básica de HTML.</li><li>Permiten mostrar y obtener información al usuario.</li><li>Posee 2 maneras de estructurarse una etiqueta:<ul><li>Utilizando una etiqueta inicial <code><tag></code> y una de cierre <code></tag></code></li><li>Utilizando solo una etiqueta <code><tag></code></li></ul></li><li>Estan compuestas mayoritariamente por propiedades como:<ul><li>Atributos.</li><li>Contenido.</li></ul></li><li>HTML define el término <strong>elemento</strong> para clasificar las diferentes etiquetas que existen en 2 grupos, tales como:<ul><li><strong>Elementos en línea o inline elements</strong>: Solo ocupan el espacio necesario para mostrar sus contenidos.</li><li><strong>Elementos en bloque o block elements</strong>: Siempre empiezan en una nueva línea y ocupan todo el espacio disponible hasta el final de la línea.</li></ul></li></ul>"
+        },
+        {
+            "etiqueta": "Atributos",
+            "codigo": "Etiqueta con cierre:<br>&nbsp;&nbsp;&nbsp;<span class='keyword'>&lt;tag atributo1='valor' atributo2='valor'&gt;&lt;/tag&gt;</span><br>Etiqueta sin cierre:<br>&nbsp;&nbsp;&nbsp;<span class='keyword'>&lt;tag atributo='valor'&gt;</span>",
+            "informacion": "</h3><p>Una etiqueta por sí sola a veces no contiene la suficiente información para estar completamente definida, para ello contamos con los <strong>atributos</strong> que son palabras especiales utilizadas dentro de la etiqueta de apertura, para controlar el comportamiento del elemento.</p><ul><li>Para definir un atributo en una etiqueta, se define nombre='valor', es decir:<ul><li><strong>nombre</strong>: Se refiere al atributo en sí.</li><li><strong>=</strong>: Separador.</li><li><strong>''</strong>: El valor de un atributo puede estar entre comillas dobles o simples.</li><li><strong>valor</strong>: Representa el contenido del atributo.</li></ul></li><li>Aunque cada etiqueta define sus propios atributos, encontramos algunos comunes que se presentan en muchas, o incluso en casi todas las etiquetas. Estos atributos se pueden dividir en cuatro grupos según su funcionalidad:<ul><li><strong>Atributos básicos</strong>:<ul><li><strong>id='texto'</strong>: Establece un indicador único a cada elemento.</li><li><strong>class='texto'</strong>: Establece la clase CSS que se aplica a los estilos del elemento.</li><li><strong>style='texto'</strong>: Aplica de forma directa los estilos CSS de un elemento.</li><li><strong>title='texto'</strong>: Establece el título del elemento (Mejora la accesibilidad).</li></ul></li><li><strong>Atributos de internacionalización</strong>: Estos atributos se utilizan en aquellas páginas que muestran sus contenidos en varios idiomas y las que quieran indicar de forma explícita el idioma de sus contenidos.</li><li><strong>Atributos de eventos</strong>: Estos atributos se utilizan en las páginas web que incluyen código JavaScript para realizar acciones dinámicas sobre los elementos de la página.</li><li><strong>Atributos de foco</strong>: Se le denomina foco o focus, cuando un control o elemento del documento ha sido seleccionado. Cuando ese elemento deja de estar seleccionado, 'pierde el foco' y es el nuevo elemento seleccionado el que se dice que tiene 'el foco'.</li></ul></li></ul>"
+        },
+        {
+            "etiqueta": "Ejemplificación:",
+            "codigo": "<span class='keyword'>&lt;a href='http://www.enlace.com' target='_blank'&gt;</span>Enlace<span class='keyword'>&lt;/a&gt;</span>",
+            "informacion": "<p>Según el codigo, podemos observar lo siguiente:</p><ul><li><strong>a</strong>: Es la etiqueta.</li><li><strong>href</strong> y <strong>target</strong>: Son los atributos.</li><li><strong>http://www.enlace.com</strong> y <strong>_blank</strong>: Son los valores de los atributos.</li><li><strong>Enlace</strong>: Es el contenido.</li></ul>"
+        }
+    ],
+    "HTML en general":[
+        {
+            "etiqueta":"DOCTYPE",
+            "codigo":"<span class='keyword'>&lt;!DOCTYPE html&gt;</span>",
+            "informacion":"<ul><li>Le indica al explorador web que el contenido es HTML5.</li><li>Se posiciona en la primera línea del archivo.</li><li>No es considerada una etiqueta, sino una declaración.</li></ul>"
+        },
+        {
+            "etiqueta":"Html",
+            "codigo":"<span class='keyword'>&lt;html&gt;</span><br>   *Contenido*<br><span class='keyword'>&lt;/html&gt;</span>",
+            "informacion":"<ul><li>Etiqueta raíz de todo el contenido en los documentos HTML.</li></ul>"
+        },
+        {
+            "etiqueta":"Head",
+            "codigo":"<span class='keyword'>&lt;head&gt;</span><br>   *Contenido*<br><span class='keyword'>&lt;/head&gt;</span>",
+            "informacion":"<ul><li>Etiqueta que contiene las características que tendrá nuestra página web.</li></ul>"
+        },
+        {
+            "etiqueta":"Body",
+            "codigo":"<span class='keyword'>&lt;body&gt;</span><br>   *Contenido*<br><span class='keyword'>&lt;/body&gt;</span>",
+            "informacion":"<ul><li>Etiqueta que contiene todo el contenido a mostrar de nuestra web.</li></ul>"
+        },
+        {
+            "etiqueta":"Title",
+            "codigo":"<span class='keyword'>&lt;title&gt;</span><br>   Este es un titulo<br><span class='keyword'>&lt;/title&gt;</span>",
+            "informacion":"<ul><li>Indica el título de la página web.</li><li>Se encuentra principalmente dentro de la etiqueta HEAD.</li></ul>"
+        },
+        {
+            "etiqueta":"Style",
+            "codigo":"<span class='keyword'>&lt;style&gt;</span><br>   p {<br>      color: blue;<br>   }<br><span class='keyword'>&lt;/style&gt;</span>",
+            "informacion":"<ul><li>Etiqueta para crear CSS.</li><li>Se encuentra principalmente dentro de la etiqueta HEAD.</li></ul>"
+        },
+        {
+            "etiqueta":"Comentarios",
+            "codigo":"&lt;!-- Mi comentario --&gt;",
+            "informacion":"<p>En HTML podemos comentar líneas sin que sean visibles para el usuario, con el fin de documentar ciertas partes del código.</p>"
+        }
+    ],
+    "Elementos en línea (definidos por HTML)":[
+        {
+            "etiqueta":"A",
+            "codigo":"<span class='keyword'>&lt;a href='http://www.google.com'&gt;</span>Google misma pestaña<span class='keyword'>&lt;/a&gt;</span><br><span class='keyword'>&lt;a href='http://www.google.com' target='_blank'&gt;</span>Google nueva pestaña<span class='keyword'>&lt;/a&gt;<span>",
+            "informacion":"<ul><li>Etiqueta de hipervínculo para acceder a otras páginas web o página del proyecto.</li><li>Puede contener atributos tales como:<ul><li><strong>href</strong>: Página de referencia.</li><li><strong>target</strong>: Abrir en una nueva pestaña.</li></ul></li><li>Es usada dentro de la etiqueta BODY.</li></ul>"
+        },
+        {
+            "etiqueta":"Br",
+            "codigo":"<span class='keyword'>&lt;p&gt;</span>Un salto<span class='keyword'>&lt;br&gt;</span>de linea<span class='keyword'>&lt;/p&gt;</span>",
+            "informacion":"<ul><li>Etiqueta para generar un salto de línea.</li><li>No requiere de una etiqueta de cierre (/br).</li><li>Es usada dentro de la etiqueta BODY.</li></ul>"
+        },
+        {
+            "etiqueta":"Img",
+            "codigo":"<span class='keyword'>&lt;img src='assets/img/img.jpg' width='200' height='100'&gt;</span>",
+            "informacion":"<ul><li>Etiqueta para mostrar imágenes.</li><li>Puede contener atributos tales como:<ul><li>src: Ruta de la imagen, ya sea una ruta en el proyecto o una URL.</li><li>width: Ancho de la imagen.</li><li>height: Alto de la imagen.</li></ul></li><li>No requiere de una etiqueta de cierre (/img).</li><li>Es usada dentro de la etiqueta BODY.</li></ul>"
+        },
+        {
+            "etiqueta":"Input",
+            "codigo":"<span class='keyword'>&lt;input type='text' name='nombre' placeholder='Juan'&gt;<br>&lt;input type='number' name='edad' placeholder='28'&gt;<br>&lt;input type='email' name='correo' placeholder='correo@correo.com'&gt;<br>&lt;input type='password' name='contraseña' placeholder='12345'&gt;<br>&lt;input type='submit' value='Enviar'&gt;<br>&lt;input type='radio' name='radio''&gt;<br>&lt;input type='checkbox' name='check'&gt;<br>&lt;input type='file' name='archivo'&gt;</span>",
+            "informacion":"<ul><li>Etiqueta para crear un campo a rellenar.</li><li>Posee atributos como:<ul><li><strong>name</strong>: Sirve para identificar en un formulario el campo y acceder a su valor.</li><li><strong>placeholder</strong>: Texto visible antes de que el usuario ingrese datos, para mostrar un ejemplo de cómo rellenar el campo.</li><li><strong>type</strong>: Representa el tipo del input:<ul><li><strong>text</strong>: Texto.</li><li><strong>number</strong>: Numérico.</li><li><strong>email</strong>: Correo electrónico.</li><li><strong>password</strong>: Contraseña.</li><li><strong>submit</strong>: Botón para enviar el formulario.</li><li><strong>radio</strong>: Botón de radio.</li><li><strong>checkbox</strong>: Casilla de verificación.</li><li><strong>file</strong>: Archivo.</li></ul></li><li><strong>value</strong>: Valor por defecto.</li></ul></li><li>No requiere de una etiqueta de cierre (/input).</li><li>Es usada regularmente dentro de la etiqueta <strong>form</strong>.</li></ul>"
+        },
+        {
+            "etiqueta":"Label",
+            "codigo":"<span class='keyword'>&lt;label for='nombre'&gt;</span>Nombre:<span class='keyword'>&lt;/label&gt;<br>&lt;input type='text' id='nombre'&gt;</span>",
+            "informacion":"<ul><li>Etiqueta para indicar el dato a solicitar en un input.</li><li>Posee atributos como:<ul><li><strong>for</strong>: Indicamos el ID del input al que queremos hacer foco.</li></ul></li><li>Es usada regularmente dentro de la etiqueta <strong>form</strong> junto con su <strong>input</strong>.</li></ul>"
+        },
+        {
+            "etiqueta":"Span",
+            "codigo":"<span class='keyword'>&lt;style&gt;</span><br>    span {<br>        color:blue<br>    }<br><span class='keyword'>&lt;/style&gt;<br>&lt;p&gt;</span><br>    Un texto con <span class='keyword'>&lt;span&gt;</span>span<span class='keyword'>&lt;/span&gt;<br>&lt;/p&gt;</span>",
+            "informacion":"<ul><li>Etiqueta para seleccionar un texto y manipularlo con CSS/JS, etc.</li><li>Es usada dentro de la etiqueta BODY.</li></ul>"
+        },
+        {
+            "etiqueta":"Textarea",
+            "codigo":"<span class='keyword'>&lt;textarea name='comentario' id='comentario' cols='30' rows='10'&gt;</span>Valor por defecto<span class='keyword'>&lt;/textarea&gt;</span>",
+            "informacion":"<ul><li>Etiqueta para ingresar un comentario.</li><li>Posee atributos como:<ul><li><strong>cols</strong>: Indica el tamaño referente a las columnas.</li><li><strong>rows</strong>: Indica el tamaño referente a las filas.</li></ul></li><li>Es usada regularmente dentro de la etiqueta <strong>form</strong>.</li></ul>"
+        }
+    ],
+    "Elementos en bloque (definidos por HTML)":[
+        {
+            "etiqueta":"H1 a H6",
+            "codigo":"<span class='keyword'>&lt;h1&gt;</span><br>   Heading 1<br><span class='keyword'>&lt;/h1&gt;<br>&lt;h4&gt;</span><br>   Heading 4<br><span class='keyword'>&lt;/h4&gt;</span>",
+            "informacion":"<ul><li>Etiquetas desde h1 a h6 utilizadas para titulos/cabeceras/subtitulos por los motores de busqueda.</li><li>h1 Representa el titulo principal y h6 el menos importante.</li><li>Se recomienda el uso de solo un h1 y que se siga un proceso sucesivo en su uso.</li><li>Es usada dentro de la etiqueta BODY.</li></ul>"
+        },
+        {
+            "etiqueta":"P",
+            "codigo":"<span class='keyword'>&lt;p&gt;</span><br>   Nuestro texto<br><span class='keyword'>&lt;/p&gt;</span>",
+            "informacion":"<ul><li>Etiqueta de párrafo, utilizada para mostrar texto.</li><li>Es usada dentro de la etiqueta BODY.</li></ul>"
+        },
+        {
+            "etiqueta":"Div",
+            "codigo":"<span class='keyword'>&lt;div&gt;<br>   &lt;p&gt;</span>Un parrafo dentro de un div<span class='keyword'>&lt;/p&gt;<br>&lt;/div&gt;</span>",
+            "informacion":"<ul><li>Se utiliza para crear contenedores genéricos en HTML.</li><li>Puede ser utilizado para agrupar y organizar contenido en secciones.</li><li>Se puede utilizar un &lt;div&gt; para representar el encabezado de una página web.</li><li>El &lt;div&gt; se coloca dentro de la etiqueta &lt;body&gt;.</li></ul>"
+        },
+        {
+            "etiqueta":"Header",
+            "codigo":"<span class='keyword'>&lt;header&gt;<br>   &lt;h1&gt;</span>Encabezado<span class='keyword'>&lt;/h1&gt;<br>&lt;/header&gt;</span>",
+            "informacion":"<ul><li>Se utiliza para definir la sección de encabezado de una página web.</li><li>Contiene información introductoria y elementos de navegación.</li><li>Se coloca al principio del documento HTML, dentro de la etiqueta &lt;body&gt;.</li><li>Es una sección importante para proporcionar contexto y facilitar la navegación.</li></ul>"
+        },
+        {
+            "etiqueta":"Section",
+            "codigo":"<span class='keyword'>&lt;section&gt;<br>   &lt;article&gt;</span>*Contenido*<span class='keyword'>&lt;/article&gt;<br>&lt;/section&gt;</span>",
+            "informacion":"<ul><li>Se utiliza para dividir y organizar el contenido en secciones temáticas en HTML.</li><li>Puede ser utilizado para representar el encabezado de una página web.</li><li>El &lt;section&gt; se coloca dentro de la etiqueta &lt;body&gt;.</li><li>Proporciona una forma semántica de estructurar y agrupar el contenido relacionado.</li></ul>"
+        },
+        {
+            "etiqueta":"Article",
+            "codigo":"<span class='keyword'>&lt;article&gt;<br>   &lt;p&gt;</span>Texto del articulo del post<span class='keyword'>&lt;/p&gt;<br>&lt;/article&gt;<br>&lt;article&gt;<br>   &lt;p&gt;</span>Texto del articulo del post 2<span class='keyword'>&lt;/p&gt;<br>&lt;/article&gt;</span>",
+            "informacion":"<ul><li>Se utiliza para representar contenido independiente y autónomo en HTML.</li><li>Puede ser utilizado para representar el encabezado de una página web.</li><li>El &lt;article&gt; se coloca dentro de la etiqueta &lt;body&gt;.</li><li>Se utiliza para agrupar contenido relacionado que puede existir por sí mismo y ser distribuido por separado.</li></ul>"
+        },
+        {
+            "etiqueta":"Footer",
+            "codigo":"<span class='keyword'>&lt;footer&gt;<br>   &lt;a href='migihub.com'&gt;</span>Github<span class='keyword'>&lt;a&gt;<br>&lt;footer&gt;</span>",
+            "informacion":"<ul><li>Se utiliza para representar el pie de página de una página web en HTML.</li><li>Puede ser utilizado para representar el encabezado de una página web.</li><li>El &lt;footer&gt; se coloca dentro de la etiqueta &lt;body&gt; al final del documento.</li><li>Se utiliza para incluir información adicional, como enlaces de contacto, derechos de autor, enlaces a políticas legales, etc.</li></ul>"
+        },
+        {
+            "etiqueta":"Form",
+            "codigo":"<span class='keyword'>&lt;form action='ruta' method='post'&gt;<br>   </span>*Formulario*<br><span class='keyword'>&lt;/form&gt;</span>",
+            "informacion":"<ul><li>Etiqueta para crear un formulario web.</li><li>Puede contener atributos tales como:<ul><li><strong>action</strong>: Ruta a donde se enviarán los datos.</li><li><strong>method</strong>: Forma de enviar los datos.<ul><li><strong>get</strong>: Datos enviados por URL.</li><li><strong>post</strong>: Datos enviados de forma 'oculta'.</li></ul></li></ul></li><li>Es usada dentro de la etiqueta BODY.</li></ul>"
+        },
+        {
+            "etiqueta":"Table",
+            "codigo":"<span class='keyword'>&lt;table&gt;<br>  &lt;thead&gt;<br>    &lt;tr&gt;<br>      &lt;th&gt;</span>Producto<span class='keyword'>&lt;/th&gt;<br>      &lt;th&gt;</span>Precio<span class='keyword'>&lt;/th&gt;<br>    &lt;/tr&gt;<br>  &lt;/thead&gt;<br>  &lt;tbody&gt;<br>    &lt;tr&gt;<br>      &lt;td&gt;</span>Teclado<span class='keyword'>&lt;/td&gt;<br>      &lt;td&gt;</span>69.000<span class='keyword'>&lt;/td&gt;<br>    &lt;/tr&gt;<br>  &lt;/tbody&gt;<br>  &lt;tfoot&gt;<br>    &lt;tr&gt;<br>      &lt;td&gt;</span>Total:<span class='keyword'>&lt;/td&gt;<br>      &lt;td&gt;</span>69.000<span class='keyword'>&lt;/td&gt;<br>    &lt;/tr&gt;<br>  &lt;/tfoot&gt;<br>&lt;/table&gt;</span>",
+            "informacion":"<ul><li>Etiqueta para crear una tabla.</li><li>Posee etiquetas como:<ul><li><strong>thead</strong>: Etiqueta para agrupar nuestra cabecera.</li><li><strong>tr</strong>: Etiqueta para crear una fila de la tabla.</li><li><strong>th</strong>: Etiqueta para crear una columna de tipo cabecera alineada al centro.</li><li><strong>tbody</strong>: Etiqueta para agrupar el contenido de nuestra tabla.</li><li><strong>td</strong>: Etiqueta para crear una columna alineada a la izquierda.</li><li><strong>tfoot</strong>: Etiqueta para crear la bajada o final de nuestra tabla.</li></ul></li><li>Utilizando esta etiqueta junto a sus etiquetas podemos mostrar información.</li><li>Es usada dentro de la etiqueta BODY.</li></ul>"
+        },
+        {
+            "etiqueta":"Ol",
+            "codigo":"<span class='keyword'>&lt;ol&gt;<br>    &lt;li&gt;</span>Item<span class='keyword'>&lt;/li&gt;<br>&lt;/ol&gt;</span>",
+            "informacion":"<ul><li>Etiqueta de lista ordenada.</li><li>Contiene la etiqueta li.</li></ul>"
+        },
+        {
+            "etiqueta":"Ul",
+            "codigo":"<span class='keyword'>&lt;ul&gt;<br>    &lt;li&gt;</span>Item<span class='keyword'>&lt;/li&gt;<br>&lt;/ul&gt;</span>",
+            "informacion":"<ul><li>Etiqueta de lista no ordenada.</li><li>Contiene la etiqueta li.</li></ul>"
+        },
+        {
+            "etiqueta":"Hr",
+            "codigo":"<span class='keyword'>&lt;p&gt;</span>Un Tema<span class='keyword'>&lt;/p&gt;<br>&lt;hr&gt;<br>&lt;p&gt;</span>Otro tema<span class='keyword'>&lt;/p&gt;</span>",
+            "informacion":"<ul><li>Etiqueta de separación para representar un cambio de tema.</li><li>No requiere de una etiqueta de cierre (/hr).</li><li>Es usada dentro de la etiqueta BODY.</li></ul>"
+        }
+    ],
+    "Elementos adicionales considerados en bloque":[
+        {
+            "etiqueta":"Li",
+            "codigo":"<span class='keyword'>&lt;ol&gt;<br>    &lt;li&gt;</span>Elemento 1<span class='keyword'>&lt;/li&gt;<br>    &lt;li value='10'&gt;</span>Elemento 10<span class='keyword'>&lt;/li&gt;<br>    &lt;li style='list-style-type:lower-alpha'&gt;</span>Elemento<span class='keyword'>&lt;/li&gt;<br>&lt;/ol&gt;</span>",
+            "informacion":"<ul><li>Etiqueta de ítem de lista.</li><li>Posee atributos como:<ul><li><strong>value</strong>: Indicar el número de la lista.</li><li><strong>style='list-style-type:VALOR'</strong>: Cambiar el indicador del índice (Cambiar valor).</li></ul></li><li>Puede contener otra lista dentro.</li><li>Es usada regularmente dentro de la etiqueta <strong>ul</strong> o <strong>ol</strong>.</li></ul>"
+        }
+    ],
+    "Elementos que pueden ser en línea y en bloque":[
+        {
+            "etiqueta":"Button",
+            "codigo":"<span class='keyword'>&lt;button type='button'&gt;</span>Boton<span class='keyword'>&lt;/button&gt;</span>",
+            "informacion":"<ul><li>Etiqueta para crear un botón.</li><li>Posee atributos como:<ul><li><strong>type</strong>: Indicar el tipo de botón.<ul><li><strong>submit</strong>: Enviar el formulario.</li><li><strong>reset</strong>: Restablecer los valores de los campos de entrada en un formulario.</li><li><strong>button</strong>: Botón para manipular, por ejemplo, con JS.</li></ul></li></ul></li><li>Puede contener otras etiquetas dentro.</li><li>Es usada regularmente dentro de la etiqueta <strong>form</strong>.</li></ul>"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>RecuerdaHTML</title>
+    <meta property="og:title" content="RecuerdaHTML">
+    <meta property="og:description" content="Bienvenidos a nuestra página, un espacio dedicado a recordar y explorar una amplia variedad de etiquetas HTML">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/logo-html.webp">
+
+    <meta name="twitter:title" content="RecuerdaHTML">
+    <meta name="description" content="Bienvenidos a nuestra página, un espacio dedicado a recordar y explorar una amplia variedad de etiquetas HTML">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="assets/img/logo-html.webp">
+
+    <link rel="icon" type="image/webp" sizes="512x512" href="assets/img/logo-html.webp">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="style-body">
+
+    <nav class="navbar navbar-light navbar-expand-md fixed-top py-2 px-5 navbar-style">
+        <div class="container-fluid"><a class="d-flex d-xl-flex justify-content-center align-items-center navbar-brand title-nav" href="#"><img class="icon-tec" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="50" height="50"/> HTML</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse d-xl-flex justify-content-xl-end" id="navcol-1">
+                <ul class="d-flex d-xl-flex justify-content-center align-items-center navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <input id="texto" class="input-buscar" type="text" list="sugerencias" placeholder="Ingrese una etiqueta">
+                        <datalist id="sugerencias"></datalist>
+                        <button id="buscar" class="btn btn-buscar" type="button">Buscar</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <article id="etiquetasContenido" class="inicio">
+        </article>
+    </section>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/crearContenido.js"></script>
+    <script src="assets/js/boxShadow.js"></script>
+    <script src="assets/js/copiarCodigo.js"></script>
+    <script src="assets/js/busquedaDespliegue.js"></script>
+</body>
+
+</html>
